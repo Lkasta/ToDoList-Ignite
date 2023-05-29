@@ -1,0 +1,11 @@
+.body {
+  width: 100vw;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 46rem;
+}
