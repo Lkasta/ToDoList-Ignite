@@ -1,0 +1,86 @@
+.task {
+  margin-top: 24px;
+  background: var(--gray-500);
+  border: 1px solid var(--gray-400);
+  color: var(--blue);
+  padding: 16px;
+  gap: 12px;
+  display: flex;
+  border-radius: 8px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
+  width: 100%;
+}
+
+.content {
+  color: var(--gray-100);
+}
+
+.contentComplete {
+  color: var(--gray-300) !important;
+  text-decoration: line-through;
+}
+
+.circle {
+  position: static;
+  height: 18px;
+  width: 21px;
+  border-radius: 50px;
+  border: 2px solid var(--blue);
+  cursor: pointer;
+}
+
+.circle:hover {
+  background-color: var(--blue-dark);
+}
+
+.circleComplete {
+  background: var(--purple-dark);
+  background-image: url("../assets/check.svg");
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: center center;
+  position: static;
+  height: 18px;
+  width: 21px;
+  border-radius: 50px;
+  border: 2px solid var(--purple-dark);
+  cursor: pointer;
+}
+.circleComplete:hover {
+  background: var(--purple);
+  background-image: url("../assets/check.svg");
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-origin: padding-box;
+  background-position: center center;
+  position: static;
+  height: 18px;
+  width: 21px;
+  border-radius: 50px;
+  border: 2px solid var(--purple);
+  cursor: pointer;
+}
+
+.checkTask:hover {
+  cursor: pointer;
+  background: var(--blue-dark);
+  border-radius: 99999rem;
+  opacity: 0.8;
+}
+
+.task p {
+  width: 800px;
+  color: var(--gray-100);
+  font-size: 0.875rem;
+}
+
+.trash {
+  color: var(--gray-100);
+  transition: 0.2s;
+  height: 20px;
+}
+
+.trash:hover {
+  color: var(--danger);
+  cursor: pointer;
+}

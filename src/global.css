@@ -18,13 +18,34 @@
   --danger: #E25858;
 }
 
-body {
-  max-width: 98vw;
-  background-color: var(--gray-600);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+::-webkit-scrollbar {
+  width: 5px;
+}
 
+::-webkit-scrollbar-track {
+  background: var(--gray-600); 
+  margin-right: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gray-600);
+  border: 1px solid var(--gray-400);
+  border-radius: 10px;
+  margin-right: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gray-500); 
+}
+
+::selection {
+  background: var(--blue-dark); 
+  color: var(--gray-100);
+}
+
+body {
+  background-color: var(--gray-600);
+  -webkit-font-smoothing: antialiased;
 }
 
 * {

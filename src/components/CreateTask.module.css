@@ -37,3 +37,13 @@ button {
   gap: 8px;
   /* font-size: 0.875rem; */
 }
+
+button:hover {
+  background: var(--blue);
+  cursor: pointer;
+}
+
+button:active {
+  background: var(--blue-dark);
+  filter: brightness(0.8);
+}
