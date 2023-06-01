@@ -18,26 +18,18 @@ export function CreateTask({ createTask }: createTaskProps) {
     setTextTask('')
   }
 
-  function handleNewTaskChange(event: ChangeEvent<HTMLInputElement>) {
-    event.target.setCustomValidity('')
-    setTextTask(event.target.value)
-  }
-
-  function handleNewTaskInvalid(event: ChangeEvent<HTMLInputElement>) {
-    event.target.setCustomValidity('Preencha este campo!')
-  }
+  const isNewTaskEmpty = textTask.length === 0
   
   return (   
     <form className={styles.form}>
       <input
         type="text"
         required
-        onInvalid={handleNewTaskInvalid}
         value={textTask}
         placeholder='Adicione uma nova tarefa'
         onChange={alterText}
       />
-      <button type='submit' onClick={handleCreateTask}>
+      <button type='submit' onClick={handleCreateTask} disabled={isNewTaskEmpty}>
         <p>Criar</p>
         <PlusCircle size={20} />
       </button>

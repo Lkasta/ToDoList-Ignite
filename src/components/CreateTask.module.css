@@ -47,3 +47,12 @@ button:active {
   background: var(--blue-dark);
   filter: brightness(0.8);
 }
+
+button:disabled {
+  filter: brightness(0.5);
+}
+
+button:disabled:hover {
+  background: var(--blue-dark);
+  cursor: default;
+}
