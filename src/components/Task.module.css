@@ -34,11 +34,10 @@
 }
 
 .circleComplete {
-  background: var(--purple-dark);
-  background-image: url("../assets/check.svg");
+  background: var(--purple-dark) url("../assets/check.svg") no-repeat center;
   background-repeat: no-repeat;
   background-size: 80%;
-  background-position: center 55%;
+  background-position: center 50%;
   position: static;
   height: 18px;
   width: 21px;
@@ -46,9 +45,9 @@
   border: 2px solid var(--purple-dark);
   cursor: pointer;
 }
+
 .circleComplete:hover {
-  background: var(--purple);
-  background-image: url("../assets/check.svg");
+  background: var(--purple-dark) url("../assets/check.svg") no-repeat center;
   background-repeat: no-repeat;
   background-size: 80%;
   background-origin: padding-box;
